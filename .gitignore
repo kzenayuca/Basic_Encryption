@@ -1,0 +1,62 @@
+# ====================================================================
+# Prerequisites & Compiled Object Files
+# ====================================================================
+*.d
+*.o
+*.ko
+*.obj
+*.elf
+*.gch
+*.pch
+
+# ====================================================================
+# Libraries & Linker Output
+# ====================================================================
+*.lib
+*.a
+*.la
+*.lo
+*.ilk
+*.map
+*.exp
+
+# ====================================================================
+# Shared Objects & Dynamic Libraries
+# ====================================================================
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# ====================================================================
+# Executables & Debug Files
+# ====================================================================
+*.exe
+*.out
+*.app
+*.pdb
+*.dSYM/
+*.su
+
+# ====================================================================
+# Common Build Directories
+# ====================================================================
+# Standard build folders
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+
+# CMake specific
+CMakeFiles/
+CMakeCache.txt
+CMakeUserPresets.json
+cmake_install.cmake
+compile_commands.json
+
+# IDE specific (CLion, VS Code, Visual Studio)
+.idea/
+.vscode/
+cmake-build-*/
+*.suo
+*.user
+
