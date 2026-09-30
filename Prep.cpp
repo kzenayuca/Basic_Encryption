@@ -11,54 +11,72 @@ using namespace std;
 
 // ============================================================
 // EJERCICIO 1
+// Sustituciones
 // ============================================================
 
-char ejercicio1(char n) {
+string ejercicio1(const string& c) {
 
-    if (n == 'j') return 'i';
-    else if (n == 'h') return 'i';
-    else if (n == 'k') return 'l';
-    else if (n == 'u') return 'v';
-    else if (n == 'w') return 'v';
-    else if (n == 'y') return 'z';
-    else return n;
+    if (c == "j") return "i";
+    else if (c == "h") return "i";
+    else if (c == "k") return "l";
+    else if (c == "u") return "v";
+    else if (c == "w") return "v";
+    else if (c == "y") return "z";
+
+    return c;
 }
 
 
 // ============================================================
 // EJERCICIO 2
 // Eliminar tildes
-// Los valores corresponden a CP850, no a UTF-8.
+// UTF-8
 // ============================================================
 
-char ejercicio2(char n) {
+string ejercicio2(const string& c) {
 
-    unsigned char c = static_cast<unsigned char>(n);
+    if (c == "á") return "a";
+    else if (c == "é") return "e";
+    else if (c == "í") return "i";
+    else if (c == "ó") return "o";
+    else if (c == "ú") return "u";
 
-    if (c == 160) return 'a'; // á
-    else if (c == 130) return 'e'; // é
-    else if (c == 161) return 'i'; // í
-    else if (c == 162) return 'o'; // ó
-    else if (c == 163) return 'u'; // ú
-    else if (c == 164) return 'n'; // ñ
-    else if (c == 165) return 'N'; // Ñ
+    else if (c == "Á") return "A";
+    else if (c == "É") return "E";
+    else if (c == "Í") return "I";
+    else if (c == "Ó") return "O";
+    else if (c == "Ú") return "U";
 
-    return n;
+    else if (c == "ñ") return "n";
+    else if (c == "Ñ") return "N";
+
+    return c;
 }
 
 
 // ============================================================
 // EJERCICIO 3
 // Convertir a mayúsculas
+// UTF-8
 // ============================================================
 
-char ejercicio3(char n) {
+string ejercicio3(const string& c) {
 
-    if (n >= 'a' && n <= 'z') {
-        return n - ('a' - 'A');
+    // Letras ASCII
+    if (c >= "a" && c <= "z") {
+        return string(1, c[0] - ('a' - 'A'));
     }
 
-    return n;
+    // Letras UTF-8
+    if (c == "á") return "Á";
+    if (c == "é") return "É";
+    if (c == "í") return "Í";
+    if (c == "ó") return "Ó";
+    if (c == "ú") return "Ú";
+
+    if (c == "ñ") return "Ñ";
+
+    return c;
 }
 
 
@@ -67,29 +85,128 @@ char ejercicio3(char n) {
 // Eliminar espacios y signos de puntuación
 // ============================================================
 
-char ejercicio4(char n) {
+bool ejercicio4(const string& c) {
 
-    if (n == ' ' ||
-        n == '.' ||
-        n == ',' ||
-        n == ';' ||
-        n == ':' ||
-        n == '!' ||
-        n == '?' ||
-        n == '-' ||
-        n == '(' ||
-        n == ')' ||
-        n == '"' ||
-        n == '\'' ||
-        n == '\n' ||
-        n == '\r' ||
-        n == '\t') {
+    // Espacios
+    if (c == " " ||
+        c == "\n" ||
+        c == "\r" ||
+        c == "\t") {
 
-        return '\0';
+        return true;
     }
 
-    return n;
+    // Signos ASCII
+    if (c == "." ||
+        c == "," ||
+        c == ";" ||
+        c == ":" ||
+        c == "!" ||
+        c == "?" ||
+        c == "-" ||
+        c == "(" ||
+        c == ")" ||
+        c == "\"" ||
+        c == "'") {
+
+        return true;
+    }
+
+    // Signos UTF-8
+    if (c == "¡" ||
+        c == "¿" ||
+        c == "…" ||
+        c == "“" ||
+        c == "”" ||
+        c == "‘" ||
+        c == "’") {
+
+        return true;
+    }
+
+    return false;
 }
+
+
+// ============================================================
+// Leer un carácter UTF-8 completo
+// ============================================================
+
+string leerUTF8(ifstream& archivo) {
+
+    char c;
+
+    if (!archivo.get(c)) {
+        return "";
+    }
+
+    unsigned char uc = static_cast<unsigned char>(c);
+
+    // ASCII: 0xxxxxxx
+    if (uc < 128) {
+        return string(1, c);
+    }
+
+    // UTF-8 de 2 bytes: 110xxxxx
+    if ((uc & 0xE0) == 0xC0) {
+
+        string resultado;
+        resultado += c;
+
+        char siguiente;
+
+        if (archivo.get(siguiente)) {
+            resultado += siguiente;
+        }
+
+        return resultado;
+    }
+
+    // UTF-8 de 3 bytes: 1110xxxx
+    if ((uc & 0xF0) == 0xE0) {
+
+        string resultado;
+        resultado += c;
+
+        char siguiente;
+
+        if (archivo.get(siguiente)) {
+            resultado += siguiente;
+        }
+
+        if (archivo.get(siguiente)) {
+            resultado += siguiente;
+        }
+
+        return resultado;
+    }
+
+    // UTF-8 de 4 bytes: 11110xxx
+    if ((uc & 0xF8) == 0xF0) {
+
+        string resultado;
+        resultado += c;
+
+        char siguiente;
+
+        if (archivo.get(siguiente)) {
+            resultado += siguiente;
+        }
+
+        if (archivo.get(siguiente)) {
+            resultado += siguiente;
+        }
+
+        if (archivo.get(siguiente)) {
+            resultado += siguiente;
+        }
+
+        return resultado;
+    }
+
+    return string(1, c);
+}
+
 
 
 // ============================================================
@@ -317,56 +434,74 @@ void ejercicio9(const string& inputPath,
         return;
     }
 
-    string texto;
-    char ch;
-
-    while (inFile.get(ch)) {
-        texto += ch;
-    }
-
-    inFile.close();
-
-
     string resultado;
 
     int contador = 0;
+    int caracteresTotales = 0;
 
-    for (char c : texto) {
+    // Leer carácter por carácter UTF-8
+    while (true) {
 
-        resultado += c;
+        string caracter = leerUTF8(inFile);
+
+        if (caracter.empty()) {
+            break;
+        }
+
+        // Agregar el carácter completo
+        resultado += caracter;
+
+        // Contar UN carácter UTF-8
         contador++;
+        caracteresTotales++;
 
+        // Cada 20 caracteres
         if (contador == 20) {
 
             resultado += "AQUI";
+
+            // "AQUI" tiene 4 caracteres
+            caracteresTotales += 4;
 
             contador = 0;
         }
     }
 
+    inFile.close();
 
-    // Completar hasta múltiplo de 4
-    while (resultado.length() % 4 != 0) {
+
+    // ========================================================
+    // Completar hasta que la cantidad de CARACTERES sea
+    // múltiplo de 4
+    // ========================================================
+
+    while (caracteresTotales % 4 != 0) {
+
         resultado += 'X';
+        caracteresTotales++;
     }
 
 
+    // Escribir resultado
     outFile << resultado;
 
     outFile.close();
 
 
     cout << "\nEjercicio 9 completado." << endl;
+
     cout << "Caracteres finales: "
-         << resultado.length()
+         << caracteresTotales
          << endl;
 
     cout << "¿Es multiplo de 4?: "
-         << (resultado.length() % 4 == 0 ? "SI" : "NO")
+         << (caracteresTotales % 4 == 0 ? "SI" : "NO")
          << endl;
 }
 
-
+// ============================================================
+// PROCESAR ARCHIVO
+// ============================================================
 
 bool processFile(const string& inputPath,
                  const string& outputPath,
@@ -382,35 +517,44 @@ bool processFile(const string& inputPath,
         return false;
     }
 
+    string caracter;
 
-    char ch;
+    while (true) {
 
-    while (inFile.get(ch)) {
+        caracter = leerUTF8(inFile);
 
+        if (caracter.empty()) {
+            break;
+        }
+
+        // EJERCICIO 1
         if (cmd == 1) {
-            ch = ejercicio1(ch);
+
+            caracter = ejercicio1(caracter);
         }
 
+        // EJERCICIO 2
         else if (cmd == 2) {
-            ch = ejercicio2(ch);
+
+            caracter = ejercicio2(caracter);
         }
 
+        // EJERCICIO 3
         else if (cmd == 3) {
-            ch = ejercicio3(ch);
+
+            caracter = ejercicio3(caracter);
         }
 
+        // EJERCICIO 4
         else if (cmd == 4) {
-            ch = ejercicio4(ch);
+
+            if (ejercicio4(caracter)) {
+                continue;
+            }
         }
 
-
-        // Si ejercicio4 indica eliminar
-        // no escribimos el caracter.
-        if (ch != '\0') {
-            outFile.put(ch);
-        }
+        outFile << caracter;
     }
-
 
     inFile.close();
     outFile.close();
