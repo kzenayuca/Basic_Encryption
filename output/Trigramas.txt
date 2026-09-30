@@ -1,0 +1,512 @@
+
+========================================
+             ATAQUE KASISKI
+========================================
+
+Trigrama: ADA
+Posiciones: 267 488 554 
+Distancias: 221 66 
+
+Trigrama: ADE
+Posiciones: 78 295 395 
+Distancias: 217 100 
+
+Trigrama: AEN
+Posiciones: 103 546 
+Distancias: 443 
+
+Trigrama: ALG
+Posiciones: 298 376 
+Distancias: 78 
+
+Trigrama: ALM
+Posiciones: 108 292 485 
+Distancias: 184 193 
+
+Trigrama: AND
+Posiciones: 248 453 
+Distancias: 205 
+
+Trigrama: ANF
+Posiciones: 18 575 
+Distancias: 557 
+
+Trigrama: ASC
+Posiciones: 264 359 
+Distancias: 95 
+
+Trigrama: ASO
+Posiciones: 142 221 
+Distancias: 79 
+
+Trigrama: ATA
+Posiciones: 16 573 
+Distancias: 557 
+
+Trigrama: AVI
+Posiciones: 12 569 
+Distancias: 557 
+
+Trigrama: AZG
+Posiciones: 1 558 
+Distancias: 557 
+
+Trigrama: BRE
+Posiciones: 134 420 425 431 462 
+Distancias: 286 5 6 31 
+
+Trigrama: CAD
+Posiciones: 77 266 
+Distancias: 189 
+
+Trigrama: COM
+Posiciones: 39 56 447 530 
+Distancias: 17 391 83 
+
+Trigrama: COS
+Posiciones: 123 506 
+Distancias: 383 
+
+Trigrama: DAS
+Posiciones: 268 274 
+Distancias: 6 
+
+Trigrama: DAT
+Posiciones: 15 572 
+Distancias: 557 
+
+Trigrama: DEA
+Posiciones: 296 374 
+Distancias: 78 
+
+Trigrama: DEL
+Posiciones: 43 277 289 396 
+Distancias: 234 12 107 
+
+Trigrama: DIO
+Posiciones: 47 52 
+Distancias: 5 
+
+Trigrama: DOL
+Posiciones: 83 512 
+Distancias: 429 
+
+Trigrama: DOS
+Posiciones: 92 232 520 
+Distancias: 140 288 
+
+Trigrama: EAL
+Posiciones: 297 375 
+Distancias: 78 
+
+Trigrama: EEL
+Posiciones: 65 316 464 
+Distancias: 251 148 
+
+Trigrama: EEM
+Posiciones: 95 523 
+Distancias: 428 
+
+Trigrama: ELA
+Posiciones: 106 290 
+Distancias: 184 
+
+Trigrama: ELI
+Posiciones: 397 415 465 
+Distancias: 18 50 
+
+Trigrama: ELL
+Posiciones: 66 172 
+Distancias: 106 
+
+Trigrama: ELO
+Posiciones: 44 278 439 496 
+Distancias: 234 161 57 
+
+Trigrama: ELV
+Posiciones: 436 493 
+Distancias: 57 
+
+Trigrama: EMA
+Posiciones: 331 411 
+Distancias: 80 
+
+Trigrama: EMP
+Posiciones: 96 524 
+Distancias: 428 
+
+Trigrama: ENE
+Posiciones: 104 151 170 
+Distancias: 47 19 
+
+Trigrama: ENL
+Posiciones: 9 386 547 566 
+Distancias: 377 161 19 
+
+Trigrama: ENO
+Posiciones: 243 405 
+Distancias: 162 
+
+Trigrama: ERO
+Posiciones: 127 166 
+Distancias: 39 
+
+Trigrama: ERT
+Posiciones: 22 183 256 392 579 
+Distancias: 161 73 136 187 
+
+Trigrama: ESE
+Posiciones: 7 186 564 
+Distancias: 179 378 
+
+Trigrama: ESI
+Posiciones: 25 582 
+Distancias: 557 
+
+Trigrama: ESO
+Posiciones: 259 334 
+Distancias: 75 
+
+Trigrama: FVE
+Posiciones: 20 181 577 
+Distancias: 161 396 
+
+Trigrama: GOL
+Posiciones: 3 33 338 560 
+Distancias: 30 305 222 
+
+Trigrama: HAZ
+Posiciones: 0 557 
+Distancias: 557 
+
+Trigrama: IDA
+Posiciones: 14 571 
+Distancias: 557 
+
+Trigrama: IDO
+Posiciones: 91 519 
+Distancias: 428 
+
+Trigrama: IER
+Posiciones: 165 227 
+Distancias: 62 
+
+Trigrama: IOM
+Posiciones: 417 467 
+Distancias: 50 
+
+Trigrama: ION
+Posiciones: 271 369 
+Distancias: 98 
+
+Trigrama: IOS
+Posiciones: 53 444 501 
+Distancias: 391 57 
+
+Trigrama: ISF
+Posiciones: 162 179 
+Distancias: 17 
+
+Trigrama: IYO
+Posiciones: 27 112 584 
+Distancias: 85 472 
+
+Trigrama: LAL
+Posiciones: 107 291 
+Distancias: 184 
+
+Trigrama: LAM
+Posiciones: 252 477 549 
+Distancias: 225 72 
+
+Trigrama: LAS
+Posiciones: 220 263 327 358 
+Distancias: 43 64 31 
+
+Trigrama: LAV
+Posiciones: 11 568 
+Distancias: 557 
+
+Trigrama: LIO
+Posiciones: 398 416 466 
+Distancias: 18 50 
+
+Trigrama: LLO
+Posiciones: 67 173 
+Distancias: 106 
+
+Trigrama: LMA
+Posiciones: 109 293 486 
+Distancias: 184 193 
+
+Trigrama: LOS
+Posiciones: 68 85 198 224 279 440 497 
+Distancias: 17 113 26 55 161 57 
+
+Trigrama: LPE
+Posiciones: 5 35 340 562 
+Distancias: 30 305 222 
+
+Trigrama: LVE
+Posiciones: 194 437 494 
+Distancias: 243 57 
+
+Trigrama: MAD
+Posiciones: 294 487 
+Distancias: 193 
+
+Trigrama: MBR
+Posiciones: 419 469 
+Distancias: 50 
+
+Trigrama: MIS
+Posiciones: 161 178 
+Distancias: 17 
+
+Trigrama: MOC
+Posiciones: 449 532 
+Distancias: 83 
+
+Trigrama: MPO
+Posiciones: 97 525 
+Distancias: 428 
+
+Trigrama: NDA
+Posiciones: 249 273 
+Distancias: 24 
+
+Trigrama: NEL
+Posiciones: 105 152 171 
+Distancias: 47 19 
+
+Trigrama: NFV
+Posiciones: 19 576 
+Distancias: 557 
+
+Trigrama: NLA
+Posiciones: 10 262 357 387 548 567 
+Distancias: 252 95 30 161 19 
+
+Trigrama: NOS
+Posiciones: 30 115 244 402 406 473 587 
+Distancias: 85 129 158 4 67 114 
+
+Trigrama: OBR
+Posiciones: 424 430 461 
+Distancias: 6 31 
+
+Trigrama: OCO
+Posiciones: 122 505 
+Distancias: 383 
+
+Trigrama: ODE
+Posiciones: 42 49 539 
+Distancias: 7 490 
+
+Trigrama: ODO
+Posiciones: 82 511 
+Distancias: 429 
+
+Trigrama: OIO
+Posiciones: 443 500 
+Distancias: 57 
+
+Trigrama: OLO
+Posiciones: 84 223 513 
+Distancias: 139 290 
+
+Trigrama: OLP
+Posiciones: 4 34 339 561 
+Distancias: 30 305 222 
+
+Trigrama: OMB
+Posiciones: 418 468 
+Distancias: 50 
+
+Trigrama: OMI
+Posiciones: 160 177 
+Distancias: 17 
+
+Trigrama: OMO
+Posiciones: 40 57 175 448 531 
+Distancias: 17 118 273 83 
+
+Trigrama: ONL
+Posiciones: 261 356 
+Distancias: 95 
+
+Trigrama: ONO
+Posiciones: 29 114 472 586 
+Distancias: 85 358 114 
+
+Trigrama: OSC
+Posiciones: 54 144 280 445 
+Distancias: 90 136 165 
+
+Trigrama: OSD
+Posiciones: 205 287 
+Distancias: 82 
+
+Trigrama: OSE
+Posiciones: 93 403 521 
+Distancias: 310 118 
+
+Trigrama: OSG
+Posiciones: 31 336 
+Distancias: 305 
+
+Trigrama: OSI
+Posiciones: 59 225 
+Distancias: 166 
+
+Trigrama: OSL
+Posiciones: 69 474 502 
+Distancias: 405 28 
+
+Trigrama: OSO
+Posiciones: 129 441 498 
+Distancias: 312 57 
+
+Trigrama: OSP
+Posiciones: 124 199 
+Distancias: 75 
+
+Trigrama: OSQ
+Posiciones: 239 407 
+Distancias: 168 
+
+Trigrama: OSS
+Posiciones: 116 353 
+Distancias: 237 
+
+Trigrama: OZA
+Posiciones: 99 527 
+Distancias: 428 
+
+Trigrama: PES
+Posiciones: 6 36 341 563 
+Distancias: 30 305 222 
+
+Trigrama: POB
+Posiciones: 423 429 
+Distancias: 6 
+
+Trigrama: POZ
+Posiciones: 98 526 
+Distancias: 428 
+
+Trigrama: QVE
+Posiciones: 241 314 383 409 
+Distancias: 73 69 26 
+
+Trigrama: REP
+Posiciones: 362 421 
+Distancias: 59 
+
+Trigrama: ROS
+Posiciones: 128 155 204 214 238 
+Distancias: 27 49 10 24 
+
+Trigrama: RTE
+Posiciones: 23 184 257 580 
+Distancias: 161 73 323 
+
+Trigrama: SCO
+Posiciones: 38 55 446 
+Distancias: 17 391 
+
+Trigrama: SCR
+Posiciones: 281 360 
+Distancias: 79 
+
+Trigrama: SDE
+Posiciones: 206 276 288 373 
+Distancias: 70 12 85 
+
+Trigrama: SEE
+Posiciones: 94 522 
+Distancias: 428 
+
+Trigrama: SEN
+Posiciones: 8 150 404 565 
+Distancias: 142 254 161 
+
+Trigrama: SGO
+Posiciones: 32 337 
+Distancias: 305 
+
+Trigrama: SIY
+Posiciones: 26 583 
+Distancias: 557 
+
+Trigrama: SOI
+Posiciones: 442 499 
+Distancias: 57 
+
+Trigrama: SON
+Posiciones: 118 130 260 355 
+Distancias: 12 130 95 
+
+Trigrama: SOS
+Posiciones: 143 335 
+Distancias: 192 
+
+Trigrama: SQV
+Posiciones: 240 408 
+Distancias: 168 
+
+Trigrama: SSO
+Posiciones: 117 354 
+Distancias: 237 
+
+Trigrama: TAN
+Posiciones: 17 574 
+Distancias: 557 
+
+Trigrama: TES
+Posiciones: 24 185 258 581 
+Distancias: 161 73 323 
+
+Trigrama: TOD
+Posiciones: 81 510 
+Distancias: 429 
+
+Trigrama: TOS
+Posiciones: 286 352 
+Distancias: 66 
+
+Trigrama: TRO
+Posiciones: 158 203 
+Distancias: 45 
+
+Trigrama: VEE
+Posiciones: 315 384 
+Distancias: 69 
+
+Trigrama: VEL
+Posiciones: 435 438 492 495 
+Distancias: 3 54 3 
+
+Trigrama: VER
+Posiciones: 21 182 255 391 578 
+Distancias: 161 73 136 187 
+
+Trigrama: VID
+Posiciones: 13 518 570 
+Distancias: 505 52 
+
+Trigrama: VNA
+Posiciones: 301 481 
+Distancias: 180 
+
+Trigrama: VVE
+Posiciones: 434 491 
+Distancias: 57 
+
+Trigrama: YON
+Posiciones: 28 113 585 
+Distancias: 85 472 
+
+Trigrama: ZGO
+Posiciones: 2 559 
+Distancias: 557 
