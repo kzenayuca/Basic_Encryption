@@ -494,7 +494,7 @@ void ejercicio9(const string& inputPath,
          << caracteresTotales
          << endl;
 
-    cout << "¿Es multiplo de 4?: "
+    cout << "Es multiplo de 4?: "
          << (caracteresTotales % 4 == 0 ? "SI" : "NO")
          << endl;
 }
@@ -591,15 +591,15 @@ int main() {
     cout << "[5] Archivo: Tabla de Frecuencias...\n";
     frecuencias("output/HERALDOSNEGROS_pre.txt", "output/TablaFrecuencias.txt");
 
-    cout << "[6] Archivo: Método Kasiski...\n";
+    cout << "[6] Archivo: Metodo Kasiski...\n";
     kasiski("output/HERALDOSNEGROS_pre.txt", "output/Trigramas.txt");
 
     //FALTANTES
-    cout << "[7] FFFFFFUNICODE-8...\n";
-    cout << "[8] FFFFFFFFUNICODE-8230...\n";
+    cout << "[7] UNICODE-8 o UTF-8 (ya procesado)\n";
+    cout << "[8] UNICODE-8230 - No posible\n";
     
     
-    cout << "[9] Inserción de la cadena AQUÍ...\n";
+    cout << "[9] Insercion de la cadena AQUI...\n";
     ejercicio9("output/HERALDOSNEGROS_pre.txt","output/Ejercicio9.txt");
 
 
